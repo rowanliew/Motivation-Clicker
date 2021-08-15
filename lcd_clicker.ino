@@ -29,6 +29,45 @@ void loop() {
 
     lcd.setCursor(2, 1);  //Move cursor to character 2 on line 1
     lcd.print(counter);
-    delay(150);
+    x();
+    delay(300);
+  }
+}
+
+void x(){
+  if (counter == 10){
+    lcd.clear();
+    lcd.setCursor(2, 0);
+    lcd.print("TEN!");
+    lcd.setCursor(2, 1);
+    lcd.print("KEEP IT UP!");
+  }
+  else if (counter == 20){
+    lcd.clear();
+    lcd.setCursor(2, 0);
+    lcd.print("TWENTY!");
+    lcd.setCursor(2, 1);
+    lcd.print("GREAT!");
+  }
+  else if (counter == 30){
+    lcd.clear();
+    lcd.setCursor(2, 0);
+    lcd.print("THIRTY!");
+    lcd.setCursor(2, 1);
+    lcd.print("WELL DONE!");
+  }
+  else if (counter == 40){
+    lcd.clear();
+    lcd.setCursor(2, 0);
+    lcd.print("FORTY!");
+    lcd.setCursor(2, 1);
+    lcd.print("GOOD JOB!");
+  }
+  else if (counter == 50){
+    lcd.clear();
+    lcd.setCursor(2, 0);
+    lcd.print("FIFTY");
+    lcd.setCursor(2, 1);
+    lcd.print("YEAAAA GIRRLLL!");
   }
 }
